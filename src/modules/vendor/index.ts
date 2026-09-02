@@ -3,4 +3,5 @@ export { default as vendorStoreKeys } from "./api/vendor-store.keys";
 export { default as useCreateStore } from "./hooks/useCreateStore";
 export { default as useGetMyStore } from "./hooks/useGetMyStore";
 export { default as useUpdateStoreSettings } from "./hooks/useUpdateStoreSettings";
-export type { CreateStorePayload, CreateStoreResponse, GetMyStoreResponse, UpdateStoreSettingsPayload, UpdateStoreSettingsResponse } from "./types/vendor-store.types";
+export { default as useGetStoreDashboard } from "./hooks/useGetStoreDashboard";
+export type { CreateStorePayload, CreateStoreResponse, GetMyStoreResponse, StoreDashboardResponse, UpdateStoreSettingsPayload, UpdateStoreSettingsResponse } from "./types/vendor-store.types";

@@ -5,3 +5,4 @@ export interface CreateStoreResponse { status: "success"; message: string; data:
 export interface GetMyStoreResponse { status: "success"; data: { store: Store; }; }
 export interface UpdateStoreSettingsPayload { name?: string; logo?: string; isActive?: boolean; openingTime?: string; closingTime?: string; categoryId?: string; authorizedBrand?: string; }
 export interface UpdateStoreSettingsResponse { status: "success"; message: string; data: { store: Store; }; }
+export interface StoreDashboardResponse { status: "success"; data: { totalProducts: number; productsInCarts: unknown[]; productsInWishlists: unknown[]; bestSelling: unknown[]; }; }
