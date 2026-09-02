@@ -48,3 +48,10 @@ export interface CreateVendorStoreProductResponse {
     product: StoreProduct;
   };
 }
+
+export interface GetVendorStoreProductResponse {
+  status: "success";
+  data: {
+    product: StoreProduct;
+  };
+}

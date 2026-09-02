@@ -5,6 +5,7 @@ import type {
   ListVendorStoreProductsResponse,
   CreateVendorStoreProductPayload,
   CreateVendorStoreProductResponse,
+  GetVendorStoreProductResponse,
 } from "@/modules/vendor";
 
 const vendorProductApi = {
@@ -25,6 +26,11 @@ const vendorProductApi = {
       CreateVendorStoreProductResponse,
       CreateVendorStoreProductPayload
     >(`/store/${storeId}/manage/products`, payload);
+  },
+  getMyStoreProduct(storeId: string, productId: string) {
+    return api.get<GetVendorStoreProductResponse>(
+      `/store/${storeId}/manage/products/${productId}`,
+    );
   },
 };
 
