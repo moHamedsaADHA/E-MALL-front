@@ -54,3 +54,10 @@ export interface ListStoreProductsResponse {
     limit: number;
   };
 }
+
+export interface GetStoreProductResponse {
+  status: "success";
+  data: {
+    product: StoreProduct;
+  };
+}
