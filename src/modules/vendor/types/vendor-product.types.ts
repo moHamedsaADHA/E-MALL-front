@@ -81,3 +81,8 @@ export interface UpdateVendorStoreProductResponse {
     product: StoreProduct;
   };
 }
+
+export interface DeleteVendorStoreProductResponse {
+  status: "success";
+  message: string;
+}

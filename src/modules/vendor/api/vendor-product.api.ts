@@ -8,6 +8,7 @@ import type {
   GetVendorStoreProductResponse,
   UpdateVendorStoreProductPayload,
   UpdateVendorStoreProductResponse,
+  DeleteVendorStoreProductResponse,
 } from "@/modules/vendor";
 
 const vendorProductApi = {
@@ -43,6 +44,11 @@ const vendorProductApi = {
       UpdateVendorStoreProductResponse,
       UpdateVendorStoreProductPayload
     >(`/store/${storeId}/manage/products/${productId}`, payload);
+  },
+  deleteMyStoreProduct(storeId: string, productId: string) {
+    return api.delete<DeleteVendorStoreProductResponse>(
+      `/store/${storeId}/manage/products/${productId}`,
+    );
   },
 };
 

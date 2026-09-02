@@ -4,10 +4,12 @@ export { default as useGetVendorStoreProducts } from "./hooks/useGetVendorStoreP
 export { default as useCreateVendorStoreProduct } from "./hooks/useCreateVendorStoreProduct";
 export { default as useGetVendorStoreProduct } from "./hooks/useGetVendorStoreProduct";
 export { default as useUpdateVendorStoreProduct } from "./hooks/useUpdateVendorStoreProduct";
+export { default as useDeleteVendorStoreProduct } from "./hooks/useDeleteVendorStoreProduct";
 
 export type {
   CreateVendorStoreProductPayload,
   CreateVendorStoreProductResponse,
+  DeleteVendorStoreProductResponse,
   GetVendorStoreProductResponse,
   ListVendorStoreProductsParams,
   ListVendorStoreProductsResponse,
