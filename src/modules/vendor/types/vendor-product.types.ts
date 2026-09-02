@@ -55,3 +55,29 @@ export interface GetVendorStoreProductResponse {
     product: StoreProduct;
   };
 }
+
+export interface UpdateStoreProductVariantPayload
+  extends StoreProductVariantPayload {
+  _id?: string;
+}
+
+export interface UpdateVendorStoreProductPayload {
+  name?: string;
+  description?: string;
+  brand?: string;
+  categoryId?: string;
+  basePrice?: number;
+  variants?: UpdateStoreProductVariantPayload[];
+  addVariant?: StoreProductVariantPayload;
+  defaultVariantId?: string;
+  images?: string[];
+  tags?: string[];
+  isActive?: boolean;
+}
+
+export interface UpdateVendorStoreProductResponse {
+  status: "success";
+  data: {
+    product: StoreProduct;
+  };
+}

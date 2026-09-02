@@ -6,6 +6,8 @@ import type {
   CreateVendorStoreProductPayload,
   CreateVendorStoreProductResponse,
   GetVendorStoreProductResponse,
+  UpdateVendorStoreProductPayload,
+  UpdateVendorStoreProductResponse,
 } from "@/modules/vendor";
 
 const vendorProductApi = {
@@ -31,6 +33,16 @@ const vendorProductApi = {
     return api.get<GetVendorStoreProductResponse>(
       `/store/${storeId}/manage/products/${productId}`,
     );
+  },
+  updateMyStoreProduct(
+    storeId: string,
+    productId: string,
+    payload: UpdateVendorStoreProductPayload,
+  ) {
+    return api.patch<
+      UpdateVendorStoreProductResponse,
+      UpdateVendorStoreProductPayload
+    >(`/store/${storeId}/manage/products/${productId}`, payload);
   },
 };
 
