@@ -9,3 +9,5 @@ export interface StoreDashboardResponse { status: "success"; data: { totalProduc
 export interface StoreOrder { _id: string; stores: unknown[]; missingItems: unknown[]; createdAt: string; updatedAt: string; }
 export interface ListStoreOrdersResponse { status: "success"; data: { orders: StoreOrder[]; total: number; }; }
 export interface GetStoreOrderResponse { status: "success"; data: { order: StoreOrder; }; }
+export interface UpdateStoreOrderPayload { status: "pending" | "accepted" | "rejected" | "ready" | "fulfilled"; rejectionReason?: string; missingItems?: { orderItemId: string; reason: string; }[]; }
+export interface UpdateStoreOrderResponse { status: "success"; message: string; data: { order: StoreOrder; }; }

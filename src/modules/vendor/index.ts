@@ -6,4 +6,5 @@ export { default as useUpdateStoreSettings } from "./hooks/useUpdateStoreSetting
 export { default as useGetStoreDashboard } from "./hooks/useGetStoreDashboard";
 export { default as useGetStoreOrders } from "./hooks/useGetStoreOrders";
 export { default as useGetStoreOrderById } from "./hooks/useGetStoreOrderById";
-export type { CreateStorePayload, CreateStoreResponse, GetMyStoreResponse, GetStoreOrderResponse, ListStoreOrdersResponse, StoreDashboardResponse, StoreOrder, UpdateStoreSettingsPayload, UpdateStoreSettingsResponse } from "./types/vendor-store.types";
+export { default as useUpdateStoreOrder } from "./hooks/useUpdateStoreOrder";
+export type { CreateStorePayload, CreateStoreResponse, GetMyStoreResponse, GetStoreOrderResponse, ListStoreOrdersResponse, StoreDashboardResponse, StoreOrder, UpdateStoreOrderPayload, UpdateStoreOrderResponse, UpdateStoreSettingsPayload, UpdateStoreSettingsResponse } from "./types/vendor-store.types";
