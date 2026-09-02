@@ -15,3 +15,4 @@ export interface Store {
 
 export interface ListStoresParams { active?: boolean; }
 export interface ListStoresResponse { status: "success"; data: { stores: Store[]; total: number; }; }
+export interface GetStoreByIdResponse { status: "success"; data: { store: Store; }; }
