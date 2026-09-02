@@ -8,3 +8,4 @@ export interface UpdateStoreSettingsResponse { status: "success"; message: strin
 export interface StoreDashboardResponse { status: "success"; data: { totalProducts: number; productsInCarts: unknown[]; productsInWishlists: unknown[]; bestSelling: unknown[]; }; }
 export interface StoreOrder { _id: string; stores: unknown[]; missingItems: unknown[]; createdAt: string; updatedAt: string; }
 export interface ListStoreOrdersResponse { status: "success"; data: { orders: StoreOrder[]; total: number; }; }
+export interface GetStoreOrderResponse { status: "success"; data: { order: StoreOrder; }; }
